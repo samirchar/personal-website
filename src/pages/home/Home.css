@@ -1,0 +1,9 @@
+.social-media li {
+    display: inline-block;
+    margin: 0 0 0 16px;
+    cursor: pointer;
+}
+
+.social-media a {
+    text-decoration: none;
+  }

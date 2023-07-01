@@ -1,0 +1,21 @@
+nav {
+    background: black;
+    padding: 10px 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+
+  nav h1 {
+    margin-right: auto;
+  }
+
+  nav li {
+    display: inline-block;
+    margin: 0 0 0 16px;
+    cursor: pointer;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
