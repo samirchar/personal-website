@@ -2,5 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/samiqhxg/public_html/
-    - /bin/cp src/index.js $DEPLOYPATH
-    - /bin/cp src/index.css $DEPLOYPATH
+    - /bin/cp -R build $DEPLOYPATH
