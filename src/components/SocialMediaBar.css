@@ -1,0 +1,32 @@
+
+
+.social-media a {
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0;
+    font-size: 2rem;
+}
+
+
+.social-media__list{
+    padding: 0;
+    display: flex; 
+    justify-content: center; /* Centers icons horizontally */
+    align-items: center; /* Centers icons vertically */
+    gap: 4rem;
+}
+
+@media screen and  (max-width:600px){
+
+    .social-media__list{
+        gap:2rem;
+    }
+
+    .social-media a {
+        font-size: 1.5rem;
+    }
+    
+  
+}  
+
+
