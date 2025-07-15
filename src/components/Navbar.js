@@ -8,9 +8,10 @@ export default function Navbar() {
     [
       { "id":1, "title": "Home", "link": "#Home" },
       {"id":2, "title": "About", "link": "#About" },
-      {"id":3, "title": "Projects", "link": "#Projects" },
-      {"id":4, "title": "Blog", "link": "#Blog" },
-      {"id":5, "title": "Contact", "link": "#Contact" }
+      {"id":3, "title": "Publications", "link": "#Publications" },
+      {"id":4, "title": "Projects", "link": "#Projects" },
+      {"id":5, "title": "Blog", "link": "#Blog" },
+      {"id":6, "title": "Contact", "link": "#Contact" }
     ]
   )
 
