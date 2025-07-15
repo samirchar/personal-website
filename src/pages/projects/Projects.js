@@ -40,7 +40,7 @@ export default function Projects() {
     <>
       <Publications />
       <section id='Projects'>
-        <div className='container projects__container'>
+        <div className='container projects__container' data-aos="fade-up">
           <h2>Projects</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
             {projects.map((proj, idx) => (

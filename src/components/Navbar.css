@@ -10,6 +10,7 @@ nav {
     z-index: 9;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+    height: var(--navbar-height-desktop);
   }
 
   .nav__container {
@@ -192,3 +193,16 @@ nav {
     margin: 1.1rem auto 0 auto;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    height: var(--navbar-height-tablet);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    height: var(--navbar-height-tablet);
+  }
+}
+

@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../components/Card.css';
 import Card from '../../components/Card';
+import './Publications.css';
 
 import protnoteImg from '../../assets/protnote.png';
 
@@ -38,7 +39,7 @@ const publications = [
 export default function Publications() {
   return (
     <section id='Publications'>
-      <div className='container publications__container'>
+      <div className='container publications__container' data-aos="fade-up">
         <h2>Publications</h2>
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
           {publications.map((pub, idx) => (

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import { NavLink } from "react-router-dom";
+import AOS from 'aos';
 
 export default function Navbar() {
 
@@ -18,6 +19,17 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const handleMenuToggle = () => setMenuOpen((open) => !open);
 
+  // Helper to handle nav link clicks
+  const handleNavClick = (e, sectionId) => {
+    e.preventDefault();
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+    setMenuOpen(false);
+  };
+  
+
   return (
     <nav>
       <div className='container nav__container'>
@@ -26,7 +38,7 @@ export default function Navbar() {
         <ul className='nav__menu nav__menu--desktop'>
           {sectionList.map((section) => (
             <li key={section.id}>
-              <a href={section.link}>{section.title}</a>
+              <a href={section.link} onClick={e => handleNavClick(e, section.link.substring(1))}>{section.title}</a>
             </li>
           ))}
         </ul>
@@ -47,7 +59,7 @@ export default function Navbar() {
         <ul className='nav__menu__list'>
           {sectionList.map((section) => (
             <li key={section.id}>  
-              <a href={section.link}>{section.title}</a>
+              <a href={section.link} onClick={e => handleNavClick(e, section.link.substring(1))}>{section.title}</a>
             </li>
           ))}
         </ul>

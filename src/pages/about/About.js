@@ -78,7 +78,7 @@ export default function About() {
 
   return (
     <section id = 'About'>
-      <div className='container about__container'>
+      <div className='container about__container' data-aos="fade-up">
       <h2>About</h2>
       <Timeline experiences={experienceList}/>
       </div>
