@@ -7,7 +7,6 @@ import {AiOutlineGithub} from 'react-icons/ai'
 import headShot from '../../assets/IMG_8474 no background.png'
 import SocialMediaBar from '../../components/SocialMediaBar'
 
-
 export default function Home() {
   const [socialMedia,setSocialMedia] = useState([
     {"name":"linkedin","url":"https://www.linkedin.com/in/samir-char/","icon":<AiOutlineLinkedin/>},
@@ -15,24 +14,26 @@ export default function Home() {
     {"name":"twitter","url":"https://twitter.com/Samir_char","icon":<AiOutlineTwitter/>},
   ])
 
-
-//{`../../assets/IMG_8470.jpg`}
-
-  console.log(socialMedia)
   return (
-    <header id='Home'>
-      
-      <div className='container header__container'>
-        <h1>Data Scientist</h1>
-        <p>My mission is to enable others to reach their full potential so that they can better serve their purpose.</p>
-        <div className='header__headshot'>
+    <header id='Home' className='hero-gradient-bg'>
+      <div className='container header__container hero-grid'>
+        <div className='hero-text'>
+          <h1 className='hero-title'>
+            <span className='hero-title-main'>Data Scientist</span>
+          </h1>
+          <p className='hero-mission'>
+            My mission is to <span className='highlight'>enable others to reach their full potential</span> so that they can better serve their purpose.
+          </p>
+          <SocialMediaBar socialMediaList={socialMedia}/>
+          <div className="hero-cta-buttons" style={{ marginTop: '2rem', display: 'flex', gap: '1.2rem' }}>
+            <a href="#Projects" className="hero-btn">View My Work</a>
+            <a href="#Contact" className="hero-btn">Contact Me</a>
+          </div>
+        </div>
+        <div className='header__headshot hero-headshot-outer'>
           <img src={headShot} alt='headShot'/>
         </div>
-        <SocialMediaBar socialMediaList = {socialMedia}/>
-        
       </div>
-      
-      
     </header>
   )
 }
