@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 
 import Home from './pages/home/Home'
 import Projects from './pages/projects/Projects'
+import Publications from './pages/publications/Publications'
 import Blog from './pages/blog/Blog'
 import About from './pages/about/About'
 import Contact from './pages/contact/Contact'
@@ -25,6 +26,7 @@ function App() {
       <Navbar/>
       <Home/>
       <About/>
+      <Publications/>
       <Projects/>
       <Blog/>
       <Contact/>

@@ -19,8 +19,10 @@ export default function Timeline({experiences}) {
             </div>
             <div className='timeline__experience__right'>
                 <h3>{exp.title}</h3>
-                <h5>{exp.dates}</h5>
-                <h5>{exp.location}</h5>
+                <div className='timeline__experience__meta'>
+                  <h5>{exp.dates}</h5>
+                  <h5>{exp.location}</h5>
+                </div>
                 {exp.description && exp.description.map(exp_desc_item => (
 
                     <ul><li>{exp_desc_item}</li></ul>

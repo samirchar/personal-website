@@ -1,12 +1,20 @@
 .timeline {
     margin: 0 auto;
-    width: fit-content;
-    padding: 0
+    width: 100%;
+    max-width: var(--section-max-width); /* Use global variable for max-width */
+    padding: 0 var(--section-padding);   /* Use global variable for padding */
+}
+
+@media (max-width: 600px) {
+  .timeline {
+    padding: 0 0.7rem;
+  }
 }
 
 .timeline__experience {
     display: flex;
     width:100%;
+    margin-bottom: 0rem; /* Reduced vertical spacing between items */
 }
 
 .timeline__experience__left{
@@ -40,10 +48,13 @@
     /* object-position: 30% 50%; */
     background: white;
     margin: 0;    
+    border-radius: 10px; /* Subtle rounded corners */
+    /* border: 1px solid #eee; */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 .timeline__experience__left__vertical-line {
-    border-right: 3px solid gray;
+    border-right: 2px solid gray; /* Thinner and lighter vertical line */
     margin-bottom: 30%;
     margin-top: 30%;
     width: 50%;
@@ -53,19 +64,60 @@
 .timeline__experience__right{
     width: 94%;
     display: block;
-    padding-bottom: 3%;
+    padding-bottom: 2%;
+    line-height: 1.5;
     
 }
 
-.timeline__experience__right h5,p {
-    margin-top: 2%;
-    margin-bottom: 2%;
+.timeline__experience__meta {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.timeline__experience__meta h5 {
+    font-weight: 400;
+}
+
+
+.timeline__experience__right h5 {
+    color: #888; /* Gray color for date and city */
 }
 
 .timeline__experience__right ul {
-    padding: 0;
+    padding-left: 0;
+    margin: 0.5rem 0;
+    list-style: none;
+}
+.timeline__experience__right li {
+    position: relative;
+    padding-left: 1.1em;
+    margin-bottom: 0.4em;
+}
+.timeline__experience__right li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.7em;
+    width: 0.4em;
+    height: 0.4em;
+    background: #bbb; /* Subtle gray, or use your accent color */
+    border-radius: 50%;
+    display: inline-block;
 }
 
-.timeline__experience__right li {
-    padding-bottom: 1%;
+@media (max-width: 600px) {
+  .timeline__experience__left__image-container {
+    width: 2.2rem;
+    min-width: 2.2rem;
+    padding-bottom: 2.2rem;
+  }
+  .timeline__experience {
+    margin-bottom: 0.7rem;
+  }
+  .timeline__experience__right h3 {
+    font-size: 1.1rem;
+  }
 }

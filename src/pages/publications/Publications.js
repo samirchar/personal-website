@@ -8,31 +8,74 @@ import protnoteImg from '../../assets/protnote.png';
 const publications = [
   {
     image: protnoteImg,
-    title: 'AI in Healthcare',
-    description: `• Explores the use of AI in medical diagnostics and treatment\n• Published at Columbia University\n• Includes real-world case studies\n• Open-source code and datasets available`,
+    title: 'In-Context Symmetries: Self-Supervised Learning through Contextual World Models',
+    description: `Oral Presentation (top 4) at NeurIPS'24 SSL`,
     paperLink: 'https://example.com/paper1',
     githubLink: 'https://github.com/example/paper1',
+    authors: [
+      { name: 'Samir Char', isMe: true, link: 'https://samirchar.com' },
+      { name: 'Chenyu Wang', link: 'https://example.com/chenyu' },
+      { name: 'Yifei Wang', link: 'https://example.com/yifei', isEqualContribution: true },
+      { name: 'Tommi Jaakkola' },
+      { name: 'Stefanie Jegelka' }
+    ],
+    venue: { name: 'NeurIPS 2024' },
+    tags: [
+      // { label: 'Oral @SSL', type: 'spotlight' },
+      // { label: 'MIT News', type: 'news', link: 'https://news.mit.edu' },
+      // { label: 'MIT Podcast', type: 'news' }
+      // { label: 'Oral @UniReps', type: 'spotlight' },
+      // { label: 'Honorable Mention', type: 'honorable' }
+    ]
   },
   {
     image: protnoteImg,
-    title: 'Distributed Systems Research',
-    description: `• Research on distributed systems\n• Presented at Uniandes\n• Focuses on scalability and reliability\n• Collaboration with international teams`,
+    title: 'An Information Criterion for Controlled Disentanglement of Multimodal Data',
+    description: `Oral Presentation (top 4) and the Honorable Mention Award at NeurIPS'24 UniReps`,
     paperLink: 'https://example.com/paper2',
     githubLink: 'https://github.com/example/paper2',
+    authors: [
+      { name: 'Chenyu Wang', link: 'https://example.com/chenyu' },
+      { name: 'Samir Char', isMe: true, isEqualContribution: true, link: 'https://samirchar.com' },
+      { name: 'Xinyi Zhang' },
+      { name: 'Sana Tonekaboni' },
+      { name: 'Stefanie Jegelka' },
+      { name: 'Tommi Jaakkola' },
+      { name: 'Caroline Uhler' }
+    ],
+    venue: { name: 'ICLR 2025' },
+    tags: [
+      { label: 'Oral @UniReps', type: 'spotlight' },
+      { label: 'Honorable Mention', type: 'honorable' }
+    ]
   },
   {
     image: protnoteImg,
     title: 'Protein Function Prediction',
-    description: `• Developed ProtNote for protein-function annotation\n• Zero-shot learning for novel functions\n• Published in top bioinformatics journal\n• Open-source implementation`,
+    description: `Developed ProtNote for protein-function annotation\nZero-shot learning for novel functions\nPublished in top bioinformatics journal\nOpen-source implementation`,
     paperLink: 'https://example.com/paper3',
     githubLink: 'https://github.com/example/paper3',
+    authors: [
+      { name: 'Samir Char', isMe: true, link: 'https://samirchar.com' },
+      { name: 'Jane Doe' }
+    ],
+    venue: { name: 'Bioinformatics Journal' },
+    tags: [
+      { label: 'Featured', type: 'news' }
+    ]
   },
   {
     image: protnoteImg,
     title: 'Genomics Data Analysis',
-    description: `• Large-scale genomics data mining\n• Automated annotation pipeline\n• Collaboration with international research labs\n• Results presented at major conference`,
+    description: `Large-scale genomics data mining\nAutomated annotation pipeline\nCollaboration with international research labs\nResults presented at major conference`,
     paperLink: 'https://example.com/paper4',
     githubLink: 'https://github.com/example/paper4',
+    authors: [
+      { name: 'Samir Char', isMe: true, link: 'https://samirchar.com' },
+      { name: 'Collaborator A' }
+    ],
+    venue: { name: 'Major Conference' },
+    tags: []
   },
 ];
 
@@ -41,7 +84,7 @@ export default function Publications() {
     <section id='Publications'>
       <div className='container publications__container' data-aos="fade-up">
         <h2>Publications</h2>
-        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           {publications.map((pub, idx) => (
             <Card
               key={idx}
@@ -50,6 +93,9 @@ export default function Publications() {
               description={pub.description}
               paperLink={pub.paperLink}
               githubLink={pub.githubLink}
+              authors={pub.authors}
+              venue={pub.venue}
+              tags={pub.tags}
             />
           ))}
         </div>

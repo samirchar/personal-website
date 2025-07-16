@@ -1,15 +1,64 @@
 import React from "react";
 import "./Card.css";
 
-const Card = ({ image, title, description, paperLink, githubLink }) => {
+// New props: authors (array), venue (object), tags (array)
+const Card = ({ image, title, description, paperLink, githubLink, authors = [], venue, tags = [] }) => {
   return (
     <div className="card">
       <div className="card-image-wrapper">
         <img src={image} alt="Card visual" className="card-image" />
       </div>
       <div className="card-content">
+        {/* Venue tag */}
+        {venue && (
+          <div className="card-venue-tag">{venue.name}</div>
+        )}
+        {/* Title */}
         {title && <h3 className="card-title">{title}</h3>}
+        {/* Authors */}
+        {authors.length > 0 && (
+          <div className="card-authors">
+            {authors.map((author, idx) => (
+              <span key={author.name}>
+                {author.link ? (
+                  <a
+                    href={author.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`card-author${author.isMe ? " card-author-me" : ""}`}
+                  >
+                    <b style={{ fontWeight: author.isMe ? 700 : 400 }}>
+                      {author.name}
+                    </b>
+                  </a>
+                ) : (
+                  <b style={{ fontWeight: author.isMe ? 700 : 400 }} className={author.isMe ? "card-author-me" : undefined}>
+                    {author.name}
+                  </b>
+                )}
+                {author.isEqualContribution && <sup>*</sup>}
+                {idx < authors.length - 1 && ", "}
+              </span>
+            ))}
+          </div>
+        )}
+        {/* Tags */}
+        {tags.length > 0 && (
+          <div className="card-tags">
+            {tags.filter(tag => tag.label !== 'Featured').map((tag, idx) => (
+              <span className={`card-tag card-tag--minimal`} key={tag.label + idx}>
+                {tag.link ? (
+                  <a href={tag.link} target="_blank" rel="noopener noreferrer">{tag.label}</a>
+                ) : (
+                  tag.label
+                )}
+              </span>
+            ))}
+          </div>
+        )}
+        {/* Description */}
         <p className="card-description">{description}</p>
+        {/* Icons */}
         <div className="card-icons">
           {paperLink && (
             <a href={paperLink} target="_blank" rel="noopener noreferrer" className="card-icon" title="View Paper">
