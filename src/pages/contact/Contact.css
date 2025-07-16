@@ -12,6 +12,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  scroll-margin-top: 100px; /* Adjust this value to match your navbar height */
+  margin-bottom: 15rem;         /* Adds extra space above the section */
 }
 
 .contact-minimal-title {
@@ -115,9 +117,38 @@
   letter-spacing: 0.01em;
 }
 
+@media (max-width: 700px) {
+  .contact-minimal-form {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .contact-minimal-input,
+  .contact-minimal-textarea {
+    grid-column: span 1 !important;
+    width: 100%;
+    min-width: 0;
+  }
+  .contact-minimal-btn {
+    grid-column: span 1;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 @media (max-width: 500px) {
   .contact-minimal-container {
     padding: 1.5rem 0.5rem 2rem 0.5rem;
+  }
+  .contact-minimal-form {
+    gap: 0.8rem;
+  }
+  .contact-minimal-btn {
+    font-size: 1rem;
+    padding: 0.7em 1em;
+  }
+  .contact-minimal-subtext {
+    font-size: 0.95rem;
   }
 }
 
