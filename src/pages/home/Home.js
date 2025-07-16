@@ -37,7 +37,7 @@ export default function Home() {
           </p>
           <SocialMediaBar socialMediaList={socialMedia}/>
           <div className="hero-cta-buttons" style={{ marginTop: '2rem', display: 'flex', gap: '1.2rem' }}>
-            <a href="#Projects" className="hero-btn" onClick={e => handleSmoothScroll(e, 'Projects')}>View My Work</a>
+            <a href="#Publications" className="hero-btn" onClick={e => handleSmoothScroll(e, 'Publications')}>View My Work</a>
             <a href="#Contact" className="hero-btn" onClick={e => handleSmoothScroll(e, 'Contact')}>Contact Me</a>
           </div>
         </div>
