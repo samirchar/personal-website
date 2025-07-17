@@ -266,3 +266,8 @@ header {
 .hero-gradient-bg {
   background: linear-gradient(90deg, #E6ECFF 0%, #F5F7FE 100%);
 }
+
+.icon {
+  width: 1.2em;
+  height: 1.2em;
+}

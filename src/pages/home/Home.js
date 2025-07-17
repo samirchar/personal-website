@@ -2,9 +2,10 @@ import {React, useState } from 'react'
 import './Home.css'
 
 import {AiOutlineLinkedin} from 'react-icons/ai'
-import {AiOutlineTwitter} from 'react-icons/ai'
 import {AiOutlineGithub} from 'react-icons/ai'
-import { SiGooglescholar } from "react-icons/si";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { ReactComponent as GoogleScholarIcon } from '../../assets/google-scholar.svg';
+import { ReactComponent as CVIcon } from '../../assets/cv.svg';
 import headShot from '../../assets/IMG_8474 no background.png'
 import SocialMediaBar from '../../components/SocialMediaBar'
 
@@ -12,10 +13,11 @@ export default function Home() {
   const [socialMedia,setSocialMedia] = useState([
     {"name":"linkedin","url":"https://www.linkedin.com/in/samir-char/","icon":<AiOutlineLinkedin/>},
     {"name":"github","url":"https://github.com/samirchar/","icon":<AiOutlineGithub/>},
-    {"name":"twitter","url":"https://twitter.com/Samir_char","icon":<AiOutlineTwitter/>},
-    {"name":"scholar","url":"https://scholar.google.com/citations?hl=en&user=L2FJtxgAAAAJ","icon":<SiGooglescholar />},
+    {"name":"X","url":"https://x.com/Samir_char","icon":<FaSquareXTwitter/>},
+    {"name":"scholar","url":"https://scholar.google.com/citations?hl=en&user=L2FJtxgAAAAJ","icon":<GoogleScholarIcon className="icon" />},
+    // {"name":"cv","url":"https://drive.google.com/file/d/1-0-_00000000000000000000000000000000000000000/view?usp=sharing","icon":<CVIcon className="icon" />},
   ])
-
+  
   // Smooth scroll handler (copied from Navbar)
   const handleSmoothScroll = (e, sectionId) => {
     e.preventDefault();
