@@ -10,6 +10,7 @@ import Publications from './pages/publications/Publications'
 import About from './pages/about/About'
 import Contact from './pages/contact/Contact'
 import Navbar from './components/Navbar'
+import Outreach from './pages/outreach/Outreach';
 
 function App() {
   useEffect(() => {
@@ -27,6 +28,7 @@ function App() {
       <About/>
       <Publications/>
       <Projects/>
+      <Outreach/>
       <Contact/>
     </div>
   );

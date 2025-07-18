@@ -11,6 +11,7 @@ export default function Navbar() {
       {"id":2, "title": "About", "link": "#About" },
       {"id":3, "title": "Publications", "link": "#Publications" },
       {"id":4, "title": "Projects", "link": "#Projects" },
+      {"id":5, "title": "Outreach", "link": "#Outreach" },
       {"id":6, "title": "Contact", "link": "#Contact" }
     ]
   )
@@ -51,17 +52,16 @@ export default function Navbar() {
       {/* Overlay and sidebar menu for mobile/tablet */}
       <div className={`nav__overlay${menuOpen ? ' nav__overlay--open' : ''}`} onClick={() => setMenuOpen(false)}></div>
       <div className={`nav__menu nav__menu--mobile${menuOpen ? ' nav__menu--open' : ''}`}>
-        <div className='nav__menu__logo'>
-          <span style={{fontSize: '2.5rem', color: '#fff', fontWeight: 700}}>SC</span>
+        <div className='nav__menu__centered'>
+          <ul className='nav__menu__list'>
+            {sectionList.map((section) => (
+              <li key={section.id}>  
+                <a href={section.link} onClick={e => handleNavClick(e, section.link.substring(1))}>{section.title}</a>
+              </li>
+            ))}
+          </ul>
         </div>
         <button className='nav__menu__close' aria-label='Close menu' onClick={() => setMenuOpen(false)}>&times;</button>
-        <ul className='nav__menu__list'>
-          {sectionList.map((section) => (
-            <li key={section.id}>  
-              <a href={section.link} onClick={e => handleNavClick(e, section.link.substring(1))}>{section.title}</a>
-            </li>
-          ))}
-        </ul>
       </div>
     </nav>
   )

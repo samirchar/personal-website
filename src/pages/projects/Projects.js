@@ -6,7 +6,7 @@ import './Projects.css';
 import proteinfertorchImg from '../../assets/proteinfertorch.jpg';
 import thesisImg from '../../assets/thesis.png';
 import deepimdbImg from '../../assets/deepimdb.png';
-
+import { sortByDateDesc } from '../../utils/sortByDate';
 
 
 const projects = [
@@ -76,7 +76,8 @@ const projects = [
       // { label: 'Oral @UniReps', type: 'spotlight' },
       // { label: 'Honorable Mention', type: 'honorable' }
     ]
-  }
+  },
+  
 ]
 
 //   {
@@ -131,12 +132,13 @@ const projects = [
 // ];
 
 export default function Projects() {
+  const sortedProjects = sortByDateDesc(projects);
   return (
     <section id='Projects'>
       <div className='container projects__container' data-aos="fade-up">
         <h2>Projects</h2>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          {projects.map((pub, idx) => (
+          {sortedProjects.map((pub, idx) => (
             <Card
               key={idx}
               image={pub.image}

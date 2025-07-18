@@ -25,8 +25,8 @@
   align-items: center;
   /* Remove gray background */
   background: none;
-  min-width: 200px;
-  width: 200px;
+  min-width: 260px;
+  width: 260px;
   height: 200px;
   padding: 0;
   border-radius: 0;
@@ -188,8 +188,8 @@
     padding: 0 1vw;
   }
   .card-image-wrapper {
-    min-width: 120px;
-    width: 120px;
+    min-width: 150px;
+    width: 150px;
     height: 120px;
   }
 }

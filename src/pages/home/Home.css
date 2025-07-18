@@ -28,7 +28,7 @@ header {
 .header__container p{
   width: 35rem;
   text-align: center;
-  margin: 2rem 2rem;
+  margin: 1rem 1rem;
 }
 
 .header__headshot img{
@@ -161,11 +161,11 @@ header {
 
 .hero-mission {
   font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 300;
   color: #374151;
   line-height: 1.7;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   margin-top: 0.5rem;
   letter-spacing: 0.01em;
 }
@@ -270,4 +270,16 @@ header {
 .icon {
   width: 1.2em;
   height: 1.2em;
+}
+
+.hero-text {
+  max-width: 32rem;
+  margin: 0 auto;
+  align-items: center; /* for perfect centering */
+}
+.hero-mission {
+  margin-bottom: 2rem;
+}
+.hero-cta-buttons {
+  margin-top: 2rem;
 }

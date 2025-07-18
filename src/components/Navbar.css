@@ -57,6 +57,23 @@ nav {
 
   .nav__overlay {
     display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(30,30,30,0.75); /* increased opacity for stronger contrast */
+    backdrop-filter: blur(12px); /* stronger blur */
+    -webkit-backdrop-filter: blur(12px); /* Safari/iOS support */
+    z-index: 10;
+    transition: opacity 0.3s;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .nav__overlay.nav__overlay--open {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
   }
 
 
@@ -100,15 +117,15 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center; /* center vertically */
     position: fixed;
     top: 0;
     right: 0;
     height: 100vh;
-    width: 60vw;
-    max-width: 400px;
-    background: rgba(50, 50, 50, 0.85);
-    box-shadow: -2px 0 16px rgba(0,0,0,0.12);
+    width: 100vw;
+    max-width: none;
+    background: transparent;
+    box-shadow: none;
     z-index: 20;
     transform: translateX(100%);
     transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), background 0.3s;
@@ -117,9 +134,17 @@ nav {
   .nav__menu--mobile.nav__menu--open {
     transform: translateX(0);
   }
+  .nav__menu__centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    gap: 2.5rem;
+  }
   .nav__menu__logo {
-    margin-top: 2.5rem;
-    margin-bottom: 2rem;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,37 +154,39 @@ nav {
     position: absolute;
     top: 2rem;
     right: 2rem;
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: #fff;
     background: none;
     border: none;
     cursor: pointer;
     z-index: 21;
-    transition: color 0.2s;
+    opacity: 0.5;
+    transition: color 0.2s, opacity 0.2s;
   }
   .nav__menu__close:hover {
     color: #bbb;
+    opacity: 0.8;
   }
   .nav__menu__list {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    gap: 1.1rem;
+    width: 100vw;
+    gap: 2.2rem;
   }
   .nav__menu li {
-    width: 100%;
+    width: 100vw;
     text-align: center;
     position: relative;
   }
   .nav__menu a {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    font-weight: 600;
+    font-weight: 500;
     padding: 0.5rem 0;
-    width: 100%;
+    width: 100vw;
     display: block;
     border-radius: 0;
     transition: color 0.2s;
@@ -170,7 +197,7 @@ nav {
     content: '';
     display: block;
     margin: 0.5rem auto 0 auto;
-    width: 60%;
+    width: 40%;
     height: 2px;
     background: #fff;
     opacity: 0;
@@ -187,9 +214,9 @@ nav {
   .nav__menu li:not(:last-child)::after {
     content: '';
     display: block;
-    width: 60%;
+    width: 40%;
     height: 1px;
-    background: rgba(255,255,255,0.18);
+    background: rgba(255,255,255,0.12);
     margin: 1.1rem auto 0 auto;
   }
 }

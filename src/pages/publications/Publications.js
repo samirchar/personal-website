@@ -5,6 +5,7 @@ import './Publications.css';
 
 import protnoteImg from '../../assets/protnote.png';
 import fewshotImg from '../../assets/fewshot.png';
+import { sortByDateDesc } from '../../utils/sortByDate';
 
 const publications = [
   {
@@ -129,12 +130,13 @@ const publications = [
 // ];
 
 export default function Publications() {
+  const sortedPublications = sortByDateDesc(publications);
   return (
     <section id='Publications'>
       <div className='container publications__container' data-aos="fade-up">
         <h2>Publications</h2>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          {publications.map((pub, idx) => (
+          {sortedPublications.map((pub, idx) => (
             <Card
               key={idx}
               image={pub.image}

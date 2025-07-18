@@ -53,7 +53,7 @@
 
 /* General section class */
 section {
-  padding: 0;
+  padding: 1.5em 0;
   background: rgba(255,255,255,0.96);
   transition: var(--transition);
   scroll-margin-top: var(--navbar-height-desktop);
@@ -65,8 +65,12 @@ section h2 {
 }
 
 body {
-  font-family: Raleway, sans-serif;
-  font-size: 0.9em;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-black);
+  background: var(--color-white);
 }
 
 
@@ -82,25 +86,30 @@ a:hover {
 }
 /* Heading Styles */
 
-h1,h2,h3,h4,h5,h6 {
-  line-height: 1.1;
-  color: var(--color-black)
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1.12;
+  color: var(--color-black);
+  margin-bottom: 0.7rem;
+  margin-top: 0;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.2rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 h4 {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 h5 {
@@ -225,7 +234,7 @@ img {
   }
 
   h2 {
-      font-size: 1.1rem;
+      font-size: 1.25rem;
   }
 
   h3 {
@@ -247,7 +256,7 @@ img {
   }
 
   section {
-    padding: 1.2em 0;
+    padding: 1em 0;
     scroll-margin-top: var(--navbar-height-tablet);
   }
 
@@ -287,5 +296,8 @@ img {
       display: flex;
   }
 
+  body {
+    font-size: 0.97rem;
+  }
   
 }

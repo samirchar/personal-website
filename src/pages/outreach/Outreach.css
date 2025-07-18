@@ -1,7 +1,5 @@
-.publications__container {
+.outreach__container {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     position: relative;
-  
-  }
+  } 

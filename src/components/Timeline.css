@@ -79,12 +79,14 @@
 
 .timeline__experience__meta h5 {
     font-weight: 400;
+    margin-bottom: 0%;
 }
 
 
 .timeline__experience__right h5 {
     color: #888; /* Gray color for date and city */
 }
+
 
 .timeline__experience__right ul {
     padding-left: 0;
