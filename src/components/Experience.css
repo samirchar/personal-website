@@ -30,7 +30,7 @@
 }
 
 .experience__title:focus {
-  color: var(--color-primary);
+  color: #2563eb;
 }
 
 .chevron {

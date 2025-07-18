@@ -1,5 +1,6 @@
 import React from 'react';
 import './Experience.css';
+import ReactMarkdown from 'react-markdown';
 
 export default function Experience({ title, description, date, isOpen, onClick, idx }) {
   return (
@@ -32,7 +33,7 @@ export default function Experience({ title, description, date, isOpen, onClick, 
         aria-labelledby={`experience-title-${idx}`}
         style={{ maxHeight: isOpen ? '200px' : '0', overflow: 'hidden', transition: 'max-height 0.3s cubic-bezier(0.4,0,0.2,1)' }}
       >
-        {isOpen && <div>{description}</div>}
+        {isOpen && <div><ReactMarkdown>{description}</ReactMarkdown></div>}
       </div>
     </div>
   );
