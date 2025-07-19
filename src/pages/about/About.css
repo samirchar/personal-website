@@ -11,3 +11,35 @@
 
   /* MEDIA QUERIES (tablets) */
 /* MEDIA QUERIES (smartphones) */
+
+.about__intro-wrapper {
+  width: 100%;
+  max-width: var(--section-max-width);
+  padding: 0 var(--section-padding);
+  margin: 1.5rem auto 4.5rem auto;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.about__intro {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #222;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+.about__intro + .about__intro {
+  margin-top: 1.2rem;
+}
+
+@media (max-width: 800px) {
+  .about__intro-wrapper {
+    max-width: 98vw;
+    padding: 0 1vw;
+  }
+  .about__intro {
+    font-size: 1rem;
+  }
+}

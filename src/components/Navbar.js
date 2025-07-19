@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
 import './Navbar.css'
-import { NavLink } from "react-router-dom";
-import AOS from 'aos';
 
 export default function Navbar() {
 
-  const [sectionList,setsectionList] = useState(
+  const [sectionList] = useState(
     [
       { "id":1, "title": "Home", "link": "#Home" },
       {"id":2, "title": "About", "link": "#About" },

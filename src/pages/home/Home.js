@@ -5,12 +5,12 @@ import {AiOutlineLinkedin} from 'react-icons/ai'
 import {AiOutlineGithub} from 'react-icons/ai'
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { ReactComponent as GoogleScholarIcon } from '../../assets/google-scholar.svg';
-import { ReactComponent as CVIcon } from '../../assets/cv.svg';
+// import { ReactComponent as CVIcon } from '../../assets/cv.svg';
 import headShot from '../../assets/IMG_8474 no background.png'
 import SocialMediaBar from '../../components/SocialMediaBar'
 
 export default function Home() {
-  const [socialMedia,setSocialMedia] = useState([
+  const [socialMedia] = useState([
     {"name":"linkedin","url":"https://www.linkedin.com/in/samir-char/","icon":<AiOutlineLinkedin/>},
     {"name":"github","url":"https://github.com/samirchar/","icon":<AiOutlineGithub/>},
     {"name":"X","url":"https://x.com/Samir_char","icon":<FaSquareXTwitter/>},

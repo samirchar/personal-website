@@ -1,5 +1,4 @@
 import React from 'react'
-import headShot from '../assets/IMG_8474 no background.png'
 import './Timeline.css'
 
 export default function Timeline({experiences}) {
@@ -13,7 +12,7 @@ export default function Timeline({experiences}) {
         <li key={exp.id} className='timeline__experience'>
             <div className='timeline__experience__left'>
                 <div className='timeline__experience__left__image-container'>
-                    <img src={exp.img}/>
+                    <img src={exp.img} alt={exp.title}/>
                 </div>
                 <div className={`timeline__experience__left__vertical-line${experiences.length === index+1 ? "-last": ""}`}/>
             </div>
