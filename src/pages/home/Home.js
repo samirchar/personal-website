@@ -6,7 +6,7 @@ import {AiOutlineGithub} from 'react-icons/ai'
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { ReactComponent as GoogleScholarIcon } from '../../assets/google-scholar.svg';
 // import { ReactComponent as CVIcon } from '../../assets/cv.svg';
-import headShot from '../../assets/headshotnobackground.png'
+import headShot from '../../assets/samir-char-headshot.png'
 import SocialMediaBar from '../../components/SocialMediaBar'
 
 export default function Home() {
@@ -44,7 +44,7 @@ export default function Home() {
           </div>
         </div>
         <div className='header__headshot hero-headshot-outer'>
-          <img src={headShot} alt='headShot'/>
+          <img src={headShot} alt='Samir Char headshot'/>
         </div>
       </div>
     </header>
