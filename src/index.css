@@ -53,7 +53,7 @@
 
 /* General section class */
 section {
-  padding: 1.5em 0;
+  padding: 1.5em 0 12em 0;
   background: rgba(255,255,255,0.96);
   transition: var(--transition);
   scroll-margin-top: var(--navbar-height-desktop);
@@ -101,7 +101,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+
 }
 
 h3 {
@@ -160,9 +161,7 @@ img {
   }
 
   h2 {
-      font-size: 1.5rem;
-      margin-bottom: 1.5rem;
-      margin-top: 0.8rem;
+    font-size: 1.7rem;
   }
 
   h3 {
@@ -184,7 +183,7 @@ img {
   }
 
   section {
-    padding: 2em 0;
+    padding: 2em 0 14em 0;
     scroll-margin-top: var(--navbar-height-tablet);
   }
 
@@ -218,6 +217,9 @@ img {
       display: flex;
   }
 
+  :root {
+    --navbar-height-tablet: 5rem;
+  }
 
 }
 
@@ -230,11 +232,11 @@ img {
       overflow-x: hidden;
   }
   h1 {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
   }
 
   h2 {
-      font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   h3 {
@@ -243,6 +245,10 @@ img {
 
   h4 {
       font-size: 0.9rem;
+  }
+
+  section h2 {
+    margin-bottom: 2rem;
   }
 
   .btn {
@@ -256,7 +262,7 @@ img {
   }
 
   section {
-    padding: 1em 0;
+    padding: 1em 0 12em 0;
     scroll-margin-top: var(--navbar-height-tablet);
   }
 
@@ -300,4 +306,7 @@ img {
     font-size: 0.97rem;
   }
   
+  :root {
+    --navbar-height-tablet: 5rem;
+  }
 }

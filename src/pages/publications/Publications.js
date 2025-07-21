@@ -46,7 +46,7 @@ const publications = [
     ],
     venue: { name: 'EETNC / IEEE' },
     tags: [
-      { label: 'Based On Class Project @Columbia University' },
+      { label: 'Class Project @CU' },
       // { label: 'MIT News', type: 'news', link: 'https://news.mit.edu' },
       // { label: 'MIT Podcast', type: 'news' }
       // { label: 'Oral @UniReps', type: 'spotlight' },

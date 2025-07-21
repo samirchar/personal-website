@@ -13,6 +13,10 @@ nav {
     height: var(--navbar-height-desktop);
   }
 
+  .nav__container h1 {
+    margin:0;
+  }
+
   .nav__container {
     display: flex;
     align-items: center;
@@ -48,9 +52,9 @@ nav {
 
   .nav__hamburger-bar {
     width: 2rem;
-    height: 0.25rem;
+    height: 0.2rem;
     background: var(--color-black);
-    margin: 0.25rem 0;
+    margin: 0.15rem 0;
     border-radius: 2px;
     transition: 0.3s;
   }

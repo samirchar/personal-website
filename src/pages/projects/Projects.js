@@ -49,7 +49,7 @@ const projects = [
       { name: 'Srujan Esanakarra'},
     ],
     tags: [
-      {'label':'Class Project @Columbia University'},
+      {'label':'Class Project @CU'},
       // { label: 'Oral @SSL', type: 'spotlight' },
       // { label: 'MIT News', type: 'news', link: 'https://news.mit.edu' },
       // { label: 'MIT Podcast', type: 'news' }

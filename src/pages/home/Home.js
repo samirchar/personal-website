@@ -32,7 +32,7 @@ export default function Home() {
       <div className='container header__container hero-grid'>
         <div className='hero-text'>
           <h1 className='hero-title'>
-            <span className='hero-title-main'>Data Scientist</span>
+            <span className='hero-title-main'>Samir Char</span>
           </h1>
           <p className='hero-mission'>
             My mission is to <span className='highlight'>enable others to reach their full potential</span> so that they can better serve their purpose.

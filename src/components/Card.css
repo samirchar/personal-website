@@ -1,7 +1,8 @@
 .card {
-  background: #fff;
+  background: #fcfcfc; /* subtle off-white for contrast */
   border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06), 0 1.5px 3px rgba(0,0,0,0.03); /* soft, minimalist shadow */
+  border: 1px solid rgba(0,0,0,0.04); /* ultra-light border for definition */
   overflow: hidden;
   transition: transform 0.2s, box-shadow 0.2s;
   display: flex;
@@ -12,6 +13,7 @@
   min-height: 200px;
   margin: 1.5rem auto;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .card:hover {
@@ -183,9 +185,15 @@
 
 @media (max-width: 800px) {
   .card {
-    width: 98vw;
-    max-width: 98vw;
+    width: 100%;
+    max-width: 96vw;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 1vw;
+    background: #fcfcfc; /* maintain contrast on mobile */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06), 0 1.5px 3px rgba(0,0,0,0.03);
+    border: 1px solid rgba(0,0,0,0.04);
+    box-sizing: border-box;
   }
   .card-image-wrapper {
     min-width: 150px;
@@ -197,8 +205,15 @@
 @media (max-width: 600px) {
   .card {
     flex-direction: column;
-    max-width: 98vw;
+    width: 100%;
+    max-width: 92vw;
     min-height: unset;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fcfcfc;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06), 0 1.5px 3px rgba(0,0,0,0.03);
+    border: 1px solid rgba(0,0,0,0.04);
+    box-sizing: border-box;
   }
   .card-image-wrapper {
     width: 100%;
@@ -208,17 +223,17 @@
     border-radius: 0;
     justify-content: center;
     align-items: center;
-    padding: 1.2rem;
+    padding: 0rem;
   }
   .card-content {
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
     padding: 1.2rem 1rem;
   }
   .card-title, .card-description, .card-authors, .card-tags {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: flex-start;
     width: 100%;
   }
   .card-venue-tag {
@@ -226,12 +241,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .card-tags {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.2em;
-  }
   .card-icons {
-    justify-content: center;
+    justify-content: flex-start;
   }
 } 
