@@ -6,7 +6,7 @@ import {AiOutlineGithub} from 'react-icons/ai'
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { ReactComponent as GoogleScholarIcon } from '../../assets/google-scholar.svg';
 // import { ReactComponent as CVIcon } from '../../assets/cv.svg';
-import headShot from '../../assets/IMG_8474 no background.png'
+import headShot from '../../assets/headshotnobackground.png'
 import SocialMediaBar from '../../components/SocialMediaBar'
 
 export default function Home() {
