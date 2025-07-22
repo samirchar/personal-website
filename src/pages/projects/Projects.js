@@ -40,9 +40,14 @@ const projects = [
     image: deepimdbImg,
     title: 'DeepIMDB',
     date:'April, 2022',
-    description: `DeepIMDb is a multimodal project designed to predict a movie’s rating and revenue using data available before its release – such as the title, synopsis, runtime, and posters. `,
-    slidesLink: 'https://docs.google.com/presentation/d/116cbm5rNAYz-KGVpehTBp8dWvl5bVAzp/edit?usp=sharing&ouid=106783910031034658668&rtpof=true&sd=true',
+    description: (
+      <>
+        DeepIMDb is a multimodal model designed to predict a movie’s rating and revenue using data available before its release – such as the title, synopsis, runtime, and posters. Final project of the Advanced Deep Learning course with <a href="https://www.peternbelhumeur.com/" target="_blank" rel="noopener noreferrer">Peter Belhumeur</a>.
+      </>
+    ),    slidesLink: 'https://docs.google.com/presentation/d/116cbm5rNAYz-KGVpehTBp8dWvl5bVAzp/edit?usp=sharing&ouid=106783910031034658668&rtpof=true&sd=true',
     githubLink: 'https://github.com/samirchar/DeepIMDB',
+    videoLink: 'https://www.youtube.com/watch?v=AnOoKLjN3Ok',
+    pdfLink: '/DeepIMDB.pdf',
     authors: [
       { name: 'Samir Char', isMe: true, link: 'https://samirchar.com' },
       { name: 'Shikha Asrani', link: 'https://www.linkedin.com/in/sasrani/'},
@@ -148,6 +153,7 @@ export default function Projects() {
               githubLink={pub.githubLink}
               slidesLink={pub.slidesLink}
               pdfLink={pub.pdfLink}
+              videoLink={pub.videoLink}
               authors={pub.authors}
               venue={pub.venue}
               tags={pub.tags}

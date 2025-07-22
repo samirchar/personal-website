@@ -3,9 +3,10 @@ import "./Card.css";
 import { FaRegFilePdf } from "react-icons/fa6";
 import { RiSlideshow2Line } from "react-icons/ri";
 import { Tooltip } from "react-tooltip";
+import { FaRegPlayCircle } from "react-icons/fa";
 
 // New props: authors (array), venue (object), tags (array)
-const Card = ({ image, title, description, paperLink, githubLink, slidesLink, pdfLink, authors = [], venue, tags = [], date }) => {
+const Card = ({ image, title, description, paperLink, githubLink, slidesLink, pdfLink, videoLink, authors = [], venue, tags = [], date }) => {
   return (
     <div className="card">
       <div className="card-image-wrapper">
@@ -87,6 +88,11 @@ const Card = ({ image, title, description, paperLink, githubLink, slidesLink, pd
           {pdfLink && (
             <a href={pdfLink} target="_blank" rel="noopener noreferrer" className="card-icon" data-tooltip-id="card-tooltip" data-tooltip-content="PDF">
               <FaRegFilePdf size={24} />
+            </a>
+          )}
+          {videoLink && (
+            <a href={videoLink} target="_blank" rel="noopener noreferrer" className="card-icon" data-tooltip-id="card-tooltip" data-tooltip-content="Video">
+              <FaRegPlayCircle size={24} />
             </a>
           )}
         </div>
