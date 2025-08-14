@@ -5,9 +5,38 @@ import './Publications.css';
 
 import protnoteImg from '../../assets/protnote.png';
 import fewshotImg from '../../assets/fewshot.png';
+import dayhoffAtlasImg from '../../assets/dayhoff-atlas.png';
 import { sortByDateDesc } from '../../utils/sortByDate';
 
 const publications = [
+  {
+    image: dayhoffAtlasImg,
+    date: 'July, 2025',
+    title: 'The Dayhoff Atlas: scaling sequence diversity improves protein design',
+    description: `The Dayhoff Atlas provides the largest open dataset of natural proteins (GigaRef) and synthetic proteins (BackboneRef), along with protein language models that achieve state-of-the-art performance in protein design and expression.`,
+    paperLink: 'https://www.biorxiv.org/content/10.1101/2025.07.21.665991v1',
+    githubLink: 'https://github.com/microsoft/dayhoff',
+    dataLink: 'https://zenodo.org/records/15265289',
+    huggingfaceLink: 'https://huggingface.co/collections/microsoft/dayhoff-atlas-6866d679465a2685b06ee969',
+    authors: [
+      { name: 'Kevin K. Yang', link: 'https://yangkky.github.io/' },
+      { name: 'Sarah Alamdari', link: 'https://www.sarahalamdari.com/' },
+      { name: 'Alex J. Lee',link: 'https://www.linkedin.com/in/alex-lee-ucsf/' },
+      { name: 'Kaeli Kaymak-Loveless', link: 'https://www.linkedin.com/in/kaeli-kaymak-loveless-b54725214/' },
+      { name: 'Samir Char', isMe: true, link: 'https://samirchar.com' },
+      { name: 'Garyk Brixi', link: 'https://www.linkedin.com/in/garykbrixi/' },
+      { name: 'Carles Domingo-Enrich', link: 'https://cdenrich.github.io/' },
+      { name: 'Chentong Wang' },
+      { name: 'Suyue Lyu',link:'https://www.linkedin.com/in/suyue-lyu-9b4657171/' },
+      { name: 'Nicolo Fusi',link: 'http://nicolofusi.com/' },
+      { name: 'Neil Tenenholtz',link:'https://www.linkedin.com/in/neil-tenenholtz/' },
+      { name: 'Ava P. Amini', link: 'https://avaamini.com' }
+    ],
+    venue: { name: 'preprint @ bioRxiv' },
+    tags: [
+      { label: 'Microsoft Blog', link: 'https://www.microsoft.com/en-us/research/articles/the-dayhoff-atlas/' }
+    ]
+  },
   {
     image: protnoteImg,
     date: 'May, 2025',
@@ -144,6 +173,8 @@ export default function Publications() {
               description={pub.description}
               paperLink={pub.paperLink}
               githubLink={pub.githubLink}
+              dataLink={pub.dataLink}
+              huggingfaceLink={pub.huggingfaceLink}
               authors={pub.authors}
               venue={pub.venue}
               tags={pub.tags}

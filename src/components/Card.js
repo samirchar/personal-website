@@ -4,9 +4,12 @@ import { FaRegFilePdf } from "react-icons/fa6";
 import { RiSlideshow2Line } from "react-icons/ri";
 import { Tooltip } from "react-tooltip";
 import { FaRegPlayCircle } from "react-icons/fa";
+import { CiDatabase } from "react-icons/ci";
+import { SiHuggingface } from "react-icons/si";
+
 
 // New props: authors (array), venue (object), tags (array)
-const Card = ({ image, title, description, paperLink, githubLink, slidesLink, pdfLink, videoLink, authors = [], venue, tags = [], date }) => {
+const Card = ({ image, title, description, paperLink, githubLink, slidesLink, pdfLink, videoLink, dataLink, huggingfaceLink, authors = [], venue, tags = [], date }) => {
   return (
     <div className="card">
       <div className="card-image-wrapper">
@@ -93,6 +96,16 @@ const Card = ({ image, title, description, paperLink, githubLink, slidesLink, pd
           {videoLink && (
             <a href={videoLink} target="_blank" rel="noopener noreferrer" className="card-icon" data-tooltip-id="card-tooltip" data-tooltip-content="Video">
               <FaRegPlayCircle size={24} />
+            </a>
+          )}
+          {dataLink && (
+            <a href={dataLink} target="_blank" rel="noopener noreferrer" className="card-icon" data-tooltip-id="card-tooltip" data-tooltip-content="Data">
+              <CiDatabase size={24} />
+            </a>
+          )}
+          {huggingfaceLink && (
+            <a href={huggingfaceLink} target="_blank" rel="noopener noreferrer" className="card-icon" data-tooltip-id="card-tooltip" data-tooltip-content="HuggingFace">
+              <SiHuggingface size={24} />
             </a>
           )}
         </div>

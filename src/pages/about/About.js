@@ -30,7 +30,7 @@ export default function About() {
         "img": msft
       },
       { "id": 2,
-        "title": "Master of Science (MS), Data Science, GPA: 4.0825/4",
+        "title": "Master of Science (MS), Data Science, GPA: 4.08/4",
         "company": "Columbia University in the City of New York",
         "dates": "2021 – 2022",
         "location": "New York, NY",
