@@ -5,7 +5,7 @@ import {AiOutlineLinkedin} from 'react-icons/ai'
 import {AiOutlineGithub} from 'react-icons/ai'
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { ReactComponent as GoogleScholarIcon } from '../../assets/google-scholar.svg';
-// import { ReactComponent as CVIcon } from '../../assets/cv.svg';
+import { ReactComponent as CVIcon } from '../../assets/cv.svg';
 import headShot from '../../assets/samir-char-headshot.png'
 import SocialMediaBar from '../../components/SocialMediaBar'
 
@@ -15,7 +15,7 @@ export default function Home() {
     {"name":"github","url":"https://github.com/samirchar/","icon":<AiOutlineGithub/>},
     {"name":"X","url":"https://x.com/Samir_char","icon":<FaSquareXTwitter/>},
     {"name":"scholar","url":"https://scholar.google.com/citations?hl=en&user=L2FJtxgAAAAJ","icon":<GoogleScholarIcon className="icon" />},
-    // {"name":"cv","url":"https://drive.google.com/file/d/1-0-_00000000000000000000000000000000000000000/view?usp=sharing","icon":<CVIcon className="icon" />},
+    {"name":"cv","url":"/SamirCharCVAug2025.pdf","icon":<CVIcon className="icon" />},
   ])
   
   // Smooth scroll handler (copied from Navbar)
