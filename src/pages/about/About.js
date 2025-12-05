@@ -15,17 +15,17 @@ export default function About() {
   const [experienceList] = useState(
     [
       { "id": 1,
-        "title": "Data Scientist 2 – Azure Core, Capacity",
+        "title": "Applied Scientist 2 – Azure Core, Capacity",
         "company": "Microsoft",
         "dates": "Jul 2022 - Present",
         "location": "Boston, MA",
         "description": [
-          "Developing a machine learning and probability-based simulation engine to proactively detect customer capacity risks over a six-month horizon.",
-          "Utilized causal inference to estimate the influence of customer experience managers on customers’ capacity experience.",
-          "Built a recommendation engine to determine how to prioritize Azure global quota support tickets under capacity constraints.",
-          "Improved XGBoost model to forecast Azure global quota requests. The model helps allocate server capacity across global Azure Data Centers.",
-          "Developed a forecasting model for Azure support tickets, estimating annual staff and budget needs at approximately $40M/year.",
-          "Led product analytics initiative, defining metrics, drove cross-team alignment, and launched a PBI that cut manual queries by 92% and time-to-insight by 40%."
+          "Created a hierarchical forecast and Monte Carlo simulation to detect customer capacity risks over a six-month horizon. Tool deployed across 65 regions, identifying 400K+ vCore gaps that drove procurement of new servers to mitigate global risk.",
+          "Built an ML model to predict the additional servers required in a data center to avoid capacity-related failures.",
+          "Applied Double ML to estimate the causal effect of a customer management program. Found that managed customers have ~20% less quota backlog and ~0.3% lower capacity failure rate.",
+          "Developed a recommendation system to prioritize global quota requests, enabling triage of over 2M vCore requests to date.",
+          "Improved XGBoost model to forecast Azure global quota requests, helping allocate capacity across Data Centers globally.",
+          "Developed a forecasting ensemble (ARIMA, ETS, regression) for Azure support tickets, reducing Mean Absolute Percentage Error (MAPE) by 20% (absolute) from baseline. Used for estimating annual staffing and budget (~$40M/year)."
         ],
         "img": msft
       },
@@ -40,41 +40,40 @@ export default function About() {
         "img": columbia
       },
       { "id": 3,
-        "title": "Data Scientist Intern – Azure Core, Capacity",
+        "title": "Applied Scientist Intern – Azure Core, Capacity",
         "company": "Microsoft",
         "dates": "Jul 2021 – Sep 2021",
         "location": "New York, NY",
         "description": [
-          "Discovered ways to improve a current Azure quota ticket forecasting model by using new streams of data, machine learning and causal inference.",
-          "Analyzed Azure Data Explorer usage data and identified top customers and usage patterns, projected product growth and identified customer churn behavior."
+          "Improved Azure quota forecasting using ML. Used clustering to identify workload and churn patterns of Azure Data Explorer"
         ],
         "img": msft
       },
       { "id": 4,
-        "title": "Semi-Senior Data Scientist",
+        "title": "Semi-Senior Applied Scientist",
         "company": "Mercado Libre",
         "dates": "Jun 2020 - Dec 2020",
         "location": "Bogotá, CO",
         "description": [
-          "Improved an AI system for Multi-Warehouse demand forecasting to produce accurate inventory plans by stocking the items that customers want in different geographical regions; cooperated with 10 data scientists to ensure algorithms satisfy commercial requirements."
+          "Improved gradient-boosting demand forecasting across multiple warehouses, increasing prediction accuracy by 5%; cooperated with 10 applied scientists to ensure algorithms satisfy commercial requirements."
         ],
         "img": meli
       },
       { "id": 5,
-        "title": "Data Scientist",
+        "title": "Applied Scientist",
         "company": "Grupodot",
         "dates": "Oct 2018 – Jun 2020",
         "location": "Bogotá, CO",
         "description": [
-          "Proposed and implemented a Deep Learning model to forecast fuel sales for more than 200 gas stations of an oil and gas company in Colombia; Decreased client volume estimate error by 11% (absolute, based on MAPE).",
-          "Built a churn prediction model for one of Latin America's largest telecom companies; achieved an uplift of 5.2 when selecting 200,000 customers to contact per month, increasing the chances of calling potential churners.",
-          "Collaborated in development of a credit default prediction model for one of Colombia's most prominent banks to secure resources in case of client default.",
+          "Built a Long Short-Term Memory (LSTM) model forecasting fuel sales for 200+ gas stations of a major energy company, achieving an 11% MAPE improvement (absolute) over the client’s model",
+          "Created an XGBoost churn model for Latin America's largest telecom; attained a 5.2 uplift on 200K monthly customers.",
+          "Developed a credit default prediction model for a major Colombian bank to secure resources in case of client default.",
           "Created Python web scrapers and used Google NLP API to construct a social media analytics tool for comments clustering, influencers' scoring, and more."
         ],
         "img": grupodot
       },
       { "id": 6,
-        "title": "Junior Data Scientist",
+        "title": "Junior Applied Scientist",
         "company": "Young & Rubicam",
         "dates": "Jul 2018 - Oct 2018",
         "location": "Bogotá, CO",
@@ -123,7 +122,7 @@ export default function About() {
       <h2>About</h2>
       <div className="about__intro-wrapper">
         <p className="about__intro">
-          I’m a Data Scientist at Microsoft Azure Core, where I develop machine learning and simulation solutions to help Azure scale seamlessly. I hold a Master’s in Data Science from Columbia University and a Bachelor’s in Electronic Engineering from Universidad de Los Andes. My work spans industry and research, with projects in cloud infrastructure, healthcare, telecom, and oil & gas, addressing problems through machine and deep learning.
+          I’m a Applied Scientist at Microsoft Azure Core, where I develop machine learning and simulation solutions to help Azure scale seamlessly. I hold a Master’s in Data Science from Columbia University and a Bachelor’s in Electronic Engineering from Universidad de Los Andes. My work spans industry and research, with projects in cloud infrastructure, healthcare, telecom, and oil & gas, addressing problems through machine and deep learning.
         </p>
         <p className="about__intro">
           My research interests include self-supervised learning, multimodal learning, and biomedicine. I’ve led research in both academic and industry settings, including publishing work on multimodal deep learning for protein function prediction. I always enjoy connecting with others, whether for collaboration, mentorship, or new ideas. Feel free to reach out!

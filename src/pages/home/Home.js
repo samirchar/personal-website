@@ -15,7 +15,7 @@ export default function Home() {
     {"name":"github","url":"https://github.com/samirchar/","icon":<AiOutlineGithub/>},
     {"name":"X","url":"https://x.com/Samir_char","icon":<FaSquareXTwitter/>},
     {"name":"scholar","url":"https://scholar.google.com/citations?hl=en&user=L2FJtxgAAAAJ","icon":<GoogleScholarIcon className="icon" />},
-    {"name":"cv","url":"/SamirCharCVAug2025.pdf","icon":<CVIcon className="icon" />},
+    {"name":"cv","url":"/SamirCharCVNov2025.pdf","icon":<CVIcon className="icon" />},
   ])
   
   // Smooth scroll handler (copied from Navbar)

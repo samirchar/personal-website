@@ -65,7 +65,7 @@ const projects = [
   
   {
     image: thesisImg,
-    title: 'Machine Learning Techniques To Prerdict Hostital Length of Stay (LOS) At The Time Of Patient Admission',
+    title: 'Machine Learning Techniques To Predict Hostital Length of Stay (LOS) At The Time Of Patient Admission',
     date:'December, 2017',
     description: `How long will a patient stay if admitted? This fundamental uncertainty challenges hospital resource planning. Using data from the Colombian Ministry of Health, I built an XGBoost model to predict patient Length of Stay (LOS) as short, medium, or long. It outperformed hospital physicians by 15% in absolute accuracy.`,
     pdfLink: 'https://repositorio.uniandes.edu.co/server/api/core/bitstreams/58a420b8-3025-45ab-9c6c-00482c06b070/content',

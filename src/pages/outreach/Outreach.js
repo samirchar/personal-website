@@ -10,14 +10,44 @@ const outreachActivities = [
     description: `Conducted mock technical and behavioral interviews for Columbia University’s M.S. in Data Science students, simulating real Microsoft interview scenarios. Focused on data science and machine learning roles, offering in-depth feedback to help students strengthen technical skills and boost confidence.`
   },
   {
+    title: "Team for Kids Foundation – Brooklyn Half Marathon",
+    date: "May, 2025",
+    description: `Ran the Brooklyn Half Marathon as part of the Team for Kids Foundation, raising $1,010 to support programs that combat childhood obesity and promote youth fitness.`
+  },
+  {
+    title: "NMDP Foundation – Bone Marrow Donor Kits",
+    date: "January, 2025",
+    description: `Assembled bone-marrow donor kits for the NMDP Foundation to support transplant matching and expand the pool of potential life-saving donors.`
+  },
+  {
+    title: "National Federation of the Blind – Sensory Kits for Children",
+    date: "May, 2024",
+    description: `Helped create 1,000 sensory kits for visually-impaired children through the National Federation of the Blind, providing accessible educational and play materials.`
+  },
+  {
     title: "Lectures on Self-Supervised Learning & Object Detection – Columbia University Seminar",
     date: "March, 2022",
     description: `As part of the [“Advanced Topics in Deep Learning”](https://www.advtopicsindeeplearning.com/) seminar course at Columbia University taught by [Professor Peter Belhumeur](https://www.peternbelhumeur.com/), I volunteered to give lectures on self-supervised learning models (BERT, RoBERTa, DistilBERT) and object detection architectures (R-CNN, Fast R-CNN, Faster R-CNN). The course focused on student-led presentations and discussions of cutting-edge research papers in deep learning.`
   },
   {
-    title: "Microsoft HOLA Career Panel – Tufts University",
-    date: "March, 2025",
-    description: `Invited by Tufts [SOLES (Society of Latinx Engineers and Scientists](https://sites.tufts.edu/soles/), I spoke at a Microsoft HOLA event to discuss careers in tech. Shared insights on the hiring process, interview prep, and career growth in data science and AI, offering mentorship to engineering students.`
+    title: "Microsoft Hispanic & Latinx Group (HOLA)",
+    date: "January 2024 – Present",
+    description: `Support and expand the Hispanic and Latinx community in STEM through mentorship, outreach, and professional development initiatives.
+
+**Highlights:**
+
+- Invited by Tufts [SOLES (Society of Latinx Engineers and Scientists)](https://sites.tufts.edu/soles/), I spoke at a Microsoft HOLA event to discuss careers in tech. Shared insights on the hiring process, interview prep, and career growth in data science and AI, offering mentorship to engineering students.
+
+- Reviewed Hispanic and Latinx student applications for a Microsoft-sponsored college scholarship.`
+  },
+  {
+    title: "Pro-bono Mentor",
+    date: "June 2021 – Present",
+    description: `Provide guidance to students and early-career professionals pursuing ML careers.
+
+**Highlights:**
+
+- Microsoft Give Campaign (Oct 2025) – launched initiative pairing 1:1 mentorship session with donations; mentored.`
   },
   {
     title: "Guest Lectures on ProtNote – Universidad de Los Andes (Bogota, Colombia)",
