@@ -4,7 +4,6 @@ import Card from '../../components/Card';
 import './Publications.css';
 
 import protnoteImg from '../../assets/protnote.png';
-import fewshotImg from '../../assets/fewshot.png';
 import dayhoffAtlasImg from '../../assets/dayhoff-atlas.png';
 import { sortByDateDesc } from '../../utils/sortByDate';
 
@@ -55,27 +54,6 @@ const publications = [
     tags: [
       { label: 'On LinkedIn', link: 'https://www.linkedin.com/feed/update/urn:li:activity:7254992723844218881/' },
       { label: 'On X', link: 'https://x.com/avapamini/status/1850936089042891149?t=7s7F04N6REHxFePo3ffEBg&s=19' },
-      // { label: 'MIT News', type: 'news', link: 'https://news.mit.edu' },
-      // { label: 'MIT Podcast', type: 'news' }
-      // { label: 'Oral @UniReps', type: 'spotlight' },
-      // { label: 'Honorable Mention', type: 'honorable' }
-    ]
-  },
-  {
-    image: fewshotImg,
-    title: 'Exploring Few-Shot Performance of Self-Supervised Visual Representations',
-    date: 'December, 2021',
-    description: `This work compares self-supervised learning methods, finding SimCLR performs best among them, though supervised learning still leads—likely due to the need for large-scale pretraining in self-supervised approaches.`,
-    paperLink: 'https://ieeexplore.ieee.org/document/10767558',
-    authors: [
-      { name: 'Ved Prakash Upadhyay', isEqualContribution: true},
-      { name: 'Shivani Modi', link: 'https://www.linkedin.com/in/modishivani/', isEqualContribution: true},
-      { name: 'Saloni Ajay Gupta', link: 'https://sg.linkedin.com/in/saloni-gupta-ajay-kumar', isEqualContribution: true},
-      { name: 'Samir Char', isMe: true, link: 'https://samirchar.com', isEqualContribution: true}
-    ],
-    venue: { name: 'EETNC / IEEE' },
-    tags: [
-      { label: 'Class Project @CU' },
       // { label: 'MIT News', type: 'news', link: 'https://news.mit.edu' },
       // { label: 'MIT Podcast', type: 'news' }
       // { label: 'Oral @UniReps', type: 'spotlight' },

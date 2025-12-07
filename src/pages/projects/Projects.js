@@ -6,6 +6,8 @@ import './Projects.css';
 import proteinfertorchImg from '../../assets/proteinfertorch.jpg';
 import thesisImg from '../../assets/thesis.png';
 import deepimdbImg from '../../assets/deepimdb.png';
+import fewshotImg from '../../assets/fewshot.png';
+
 import { sortByDateDesc } from '../../utils/sortByDate';
 
 
@@ -53,6 +55,8 @@ const projects = [
       { name: 'Shikha Asrani', link: 'https://www.linkedin.com/in/sasrani/'},
       { name: 'Srujan Esanakarra'},
     ],
+    venue: { name: 'Columbia University' },
+
     tags: [
       {'label':'Class Project @CU'},
       // { label: 'Oral @SSL', type: 'spotlight' },
@@ -82,6 +86,28 @@ const projects = [
       // { label: 'Honorable Mention', type: 'honorable' }
     ]
   },
+
+  {
+    image: fewshotImg,
+    title: 'Exploring Few-Shot Performance of Self-Supervised Visual Representations',
+    date: 'December, 2021',
+    description: `This work compares self-supervised learning methods, finding SimCLR performs best among them, though supervised learning still leads—likely due to the need for large-scale pretraining in self-supervised approaches.`,
+    pdfLink: '/ExploringFew-ShotPerformanceofSelf-SupervisedVisualRepresentations.pdf',
+    authors: [
+      { name: 'Samir Char', isMe: true, link: 'https://samirchar.com', isEqualContribution: true},
+      { name: 'Shivani Modi', link: 'https://www.linkedin.com/in/modishivani/', isEqualContribution: true},
+      { name: 'Saloni Ajay Gupta', link: 'https://sg.linkedin.com/in/saloni-gupta-ajay-kumar', isEqualContribution: true}
+      
+    ],
+    venue: { name: 'Columbia University' },
+    tags: [
+      { label: 'Class Project @CU' },
+      // { label: 'MIT News', type: 'news', link: 'https://news.mit.edu' },
+      // { label: 'MIT Podcast', type: 'news' }
+      // { label: 'Oral @UniReps', type: 'spotlight' },
+      // { label: 'Honorable Mention', type: 'honorable' }
+    ]
+  }
   
 ]
 
